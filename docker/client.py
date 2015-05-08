@@ -701,6 +701,7 @@ class Client(requests.Session):
         s_port = str(private_port)
         h_ports = None
 
+        print "JSON DATA"
         print json_
         h_ports = json_['NetworkSettings']['Ports'].get(s_port + '/udp')
         if h_ports is None:
